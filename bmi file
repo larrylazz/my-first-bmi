@@ -1,0 +1,20 @@
+print("Welcome to the BMI calculator")
+myName = input("please enter your name")
+print("It is nice to meet you, {}".format(myName))
+print("please enter your height in M's")
+height_m = float(input())
+print("your height is, {}".format(height_m))
+print("please enter your weight in KG's?")
+weight_kg = float(input())
+
+def bmi_calculator (myName, height_m, weight_kg):
+    bmi = weight_kg / (height_m) ** 2
+    print ("bmi: ")
+    print(bmi)
+    if bmi < 25:
+        return myName + " you are not overweight"
+    else:
+        return myName + " you are overweight"
+result1 = bmi_calculator ( myName, height_m, weight_kg)
+
+print(result1)
